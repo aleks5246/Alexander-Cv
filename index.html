@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alexander Östman | Nätverkstekniker</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+:root{
+--bg:#030712;
+--card:#071225;
+--border:#1a2847;
+--blue:#2563ff;
+--text:#fff;
+--muted:#94a3b8;
+}
+body{
+font-family:Inter,sans-serif;
+background:var(--bg);
+color:var(--text);
+line-height:1.7;
+}
+body::before{
+content:"";
+position:fixed;
+inset:0;
+z-index:-1;
+background:
+radial-gradient(circle at top left,rgba(37,99,255,.18),transparent 35%),
+radial-gradient(circle at bottom right,rgba(37,99,255,.08),transparent 30%);
+}
+.container{width:min(1200px,90%);margin:auto}
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(3,7,18,.85);
+backdrop-filter:blur(12px);
+border-bottom:1px solid rgba(255,255,255,.05);
+z-index:999;
+}
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 0;
+}
+.logo{font-size:1.3rem;font-weight:800}
+.logo span{color:var(--blue)}
+.links a{
+text-decoration:none;
+color:#cbd5e1;
+margin-left:24px;
+transition:.3s;
+}
+.links a:hover{color:white}
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+text-align:center;
+}
+.badge{
+display:inline-block;
+padding:12px 20px;
+border-radius:999px;
+border:1px solid rgba(37,99,255,.4);
+color:#8fb0ff;
+}
+h1{
+font-size:clamp(3.5rem,8vw,7rem);
+line-height:.95;
+margin:25px 0;
+}
+h1 span{color:var(--blue)}
+.lead{
+max-width:900px;
+margin:auto;
+font-size:1.2rem;
+color:var(--muted);
+}
+.hero-buttons{
+display:flex;
+justify-content:center;
+gap:18px;
+margin-top:40px;
+flex-wrap:wrap;
+}
+.btn{
+padding:14px 28px;
+border-radius:14px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+.btn-primary{background:var(--blue);color:white}
+.btn-outline{border:1px solid var(--blue);color:white}
+.btn:hover{transform:translateY(-3px)}
+section{padding:110px 0}
+.section-title{text-align:center;margin-bottom:60px}
+.section-title h2{font-size:3rem}
+.section-title p{color:var(--muted)}
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+.card{
+background:var(--card);
+border:1px solid var(--border);
+border-radius:24px;
+padding:35px;
+transition:.3s;
+}
+.card:hover{
+transform:translateY(-8px);
+border-color:var(--blue);
+}
+.card p{color:var(--muted)}
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+justify-content:center;
+}
+.skills span{
+padding:8px 14px;
+border-radius:999px;
+background:#0f172a;
+border:1px solid var(--border);
+}
+.about{
+max-width:900px;
+margin:auto;
+text-align:center;
+font-size:1.15rem;
+color:var(--muted);
+}
+.contact{
+background:var(--card);
+border:1px solid var(--border);
+border-radius:24px;
+padding:45px;
+text-align:center;
+max-width:800px;
+margin:auto;
+}
+.contact a{
+color:#9eb8ff;
+text-decoration:none;
+}
+.cta-text{
+max-width:900px;
+margin:0 auto 40px;
+text-align:center;
+font-size:1.2rem;
+color:#cbd5e1;
+}
+footer{
+padding:40px;
+text-align:center;
+color:#64748b;
+}
+@media(max-width:768px){
+.links{display:none}
+.section-title h2{font-size:2.2rem}
+}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="container nav">
+<div class="logo">Alexander <span>Östman</span></div>
+<div class="links">
+<a href="#kompetenser">Kompetenser</a>
+<a href="#projekt">Projekt</a>
+<a href="#varformig">Varför mig?</a>
+<a href="#kontakt">Kontakt</a>
+</div>
+</div>
+</nav>
+
+<section class="hero">
+<div class="container">
+<div class="badge">IT • Nätverk • Server • Support</div>
+
+<h1>Blivande<br><span>Nätverkstekniker</span><br>med passion för IT</h1>
+
+<p class="lead">
+Jag är utbildad nätverkstekniker med ett stort intresse för IT, nätverk och problemlösning.
+När jag inte studerar eller söker jobb bygger jag egna projekt, testar nya lösningar och fortsätter utveckla mina kunskaper.
+Jag söker nu min första möjlighet inom IT där jag kan bidra, lära mig av erfarna kollegor och fortsätta växa som tekniker.
+</p>
+
+<div class="hero-buttons">
+<a href="#kontakt" class="btn btn-primary">Kontakta mig</a>
+<a href="#projekt" class="btn btn-outline">Mina projekt</a>
+</div>
+</div>
+</section>
+
+<section id="kompetenser">
+<div class="container">
+<div class="section-title">
+<h2>Kärnkompetenser</h2>
+<p>Tekniker och områden jag arbetar med</p>
+</div>
+
+<div class="skills">
+<span>Windows Server</span>
+<span>Active Directory</span>
+<span>Cisco</span>
+<span>TCP/IP</span>
+<span>LAN/WAN</span>
+<span>Routing</span>
+<span>VLAN</span>
+<span>IT-Support</span>
+<span>HTML</span>
+<span>CSS</span>
+</div>
+</div>
+</section>
+
+<section id="projekt">
+<div class="container">
+<div class="section-title">
+<h2>Projekt</h2>
+<p>Praktiska projekt som hjälpt mig utvecklas inom IT</p>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>🖥️ Egen Servermiljö</h3>
+<p>
+Byggt och administrerat en testmiljö med Windows Server, Active Directory,
+användarhantering och nätverkskonfiguration för att utveckla praktiska kunskaper inom serveradministration.
+</p>
+</div>
+
+<div class="card">
+<h3>🌐 Personlig Portfolio</h3>
+<p>
+Designad och utvecklad från grunden med HTML och CSS.
+Projektet används för att visa upp mina kunskaper samtidigt som jag utvecklar mina färdigheter inom webbutveckling.
+</p>
+</div>
+
+<div class="card">
+<h3>🔌 Cisco Nätverk</h3>
+<p>
+Arbetat med VLAN, trunking, routing och felsökning i Cisco Packet Tracer och utbildningsmiljöer.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="varformig">
+<div class="container">
+<div class="section-title">
+<h2>Varför anställa mig?</h2>
+<p>Vad jag tror att jag kan bidra med</p>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>🚀 Driven</h3>
+<p>
+Jag lägger mycket av min fritid på att lära mig nya tekniker, bygga projekt och utveckla mina kunskaper.
+</p>
+</div>
+
+<div class="card">
+<h3>🧠 Lär mig snabbt</h3>
+<p>
+Jag tycker om att förstå hur saker fungerar på djupet och är van att självständigt söka kunskap och lösa problem.
+</p>
+</div>
+
+<div class="card">
+<h3>🔧 Problemlösare</h3>
+<p>
+Jag gillar felsökning och arbetar metodiskt tills jag hittar orsaken till problemet och en fungerande lösning.
+</p>
+</div>
+
+<div class="card">
+<h3>💡 Teknik som hobby</h3>
+<p>
+För mig är IT mer än bara ett framtida yrke. Jag spenderar mycket av min fritid med teknik, projekt och lärande.
+</p>
+</div>
+
+<div class="card">
+<h3>📈 Ständig utveckling</h3>
+<p>
+Jag söker aktivt nya utmaningar för att bredda mina kunskaper inom nätverk, servermiljöer och IT-support.
+</p>
+</div>
+
+<div class="card">
+<h3>🤝 Samarbetsvillig</h3>
+<p>
+Jag tycker om att lära av andra, samarbeta i team och bidra till en positiv arbetsmiljö.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="section-title">
+<h2>Så arbetar jag</h2>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>Strukturerad</h3>
+<p>Jag arbetar metodiskt och dokumenterar gärna det jag gör för att skapa tydlighet.</p>
+</div>
+
+<div class="card">
+<h3>Nyfiken</h3>
+<p>Jag är inte rädd för att testa nya tekniker eller ta mig an problem jag inte löst tidigare.</p>
+</div>
+
+<div class="card">
+<h3>Målinriktad</h3>
+<p>Mitt fokus är att fortsätta utvecklas och skapa långsiktiga resultat.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="section-title">
+<h2>Om mig</h2>
+</div>
+
+<p class="about">
+Jag är utbildad nätverkstekniker från Örebro med ett genuint intresse för teknik och problemlösning.
+Under utbildningen har jag arbetat med Windows Server, Active Directory, Cisco-utrustning och IT-support.
+På fritiden fortsätter jag att bygga projekt och utveckla mina kunskaper för att hela tiden bli bättre inom mitt område.
+Mitt mål är att få min första möjlighet inom IT och växa tillsammans med ett företag där jag kan utvecklas långsiktigt.
+</p>
+</div>
+</section>
+
+<section id="kontakt">
+<div class="container">
+
+<p class="cta-text">
+Letar ni efter någon med ett genuint teknikintresse, vilja att utvecklas och motivation att bygga en långsiktig karriär inom IT?
+Då ser jag fram emot att höra från er.
+</p>
+
+<div class="contact">
+<h2>Kontakt</h2>
+<p><a href="mailto:alexanderostman00@gmail.com">alexanderostman00@gmail.com</a></p>
+<p><a href="tel:0721801011">072-180 10 11</a></p>
+<p>Örebro</p>
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 Alexander Östman
+</footer>
+
+</body>
+</html>
